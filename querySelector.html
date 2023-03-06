@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p class="para">First Paragraph</p>
+        <p id="sec">Second Paragraph</p>
+        <p class="para">Third Paragraph</p>
+        <button onclick="alter()">Click</button>
+        <script>
+            function alter(){
+                const ele = document.querySelector("#sec"); //tagname like p or classname like .para or id like #sec
+                ele.style.color="red";
+                const ele1 = document.querySelectorAll(".para2");
+                console.log(ele1);
+                ele1.forEach((item)=> item.style.backgroundColor="blue")
+            }
+        </script>
+
+    </body>
+</html>

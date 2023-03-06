@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <ul>
+            <li class="red">Apple</li>
+            <li class="red">Strawberry</li>
+            <li id="purple">Grape</li>
+            <li class="orange">Orange</li>
+            <li id="green">Kiwi</li>
+            <li class="orange">Pumpkin</li>
+        </ul>
+        <button onclick="colorchange()">Color Change</button>
+        <script>
+            function colorchange(){
+                const ele = document.getElementsByClassName("red")
+                const eleorange = document.getElementsByClassName("orange")
+                const purple = document.getElementById("purple");
+                purple.style.color="purple";
+                const green = document.getElementById("green");
+                green.style.color="green";
+
+                for(let i=0;i<eleorange.length; i++){
+                    eleorange[i].style.color="orange";
+                }
+                for(let i=0;i<ele.length;i++){
+                    ele[i].style.color="red";
+                }
+
+
+            }
+        </script>
+
+    </body>
+</html>

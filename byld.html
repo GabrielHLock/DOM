@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Heading</h1>
+        <p id="first">First Paragraph</p>
+        <p id="sec">Second Paragraph</p>
+        <ul>
+        <li id="listfirst">red</li>
+        <li id="listsecond">green</li>
+        <li id="listthird">blue</li>
+        </ul>
+        <button onclick="change()">Change</button>
+        <script>
+            function change(){
+            const first = document.getElementById("first");
+            console.log(first);
+            first.innerHTML="New paragraph";
+            first.style.color="red";
+            first.style.fontSize="30px";
+
+            const red  = document.getElementById("listfirst");
+            listfirst.style.color="red";
+            const green  = document.getElementById("listsecond");
+            green.style.color="green";
+            const blue  = document.getElementById("listthird");
+            blue.style.color="blue"; 
+            }
+        </script>
+
+    </body>
+</html>
